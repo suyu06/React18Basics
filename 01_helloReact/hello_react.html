@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+<!-- prepare a container -->
+<div id = "root"> </div>
+
+<!-- inject react core library -->
+<script type="text/javascript" src="../JS/react.development.js"></script>
+<!-- inject react dom library -->
+<script type="text/javascript"  src="../JS/react-dom.development.js"></script>
+<!-- inject babel for translating jsx to js-->
+<script type="text/javascript" src="../JS/babel.min.js"></script>
+
+<script type="text/babel">   /* here, must be babel, not js*/
+//1. create virtual DOM
+const div = React.createElement('div',{},'This is a div created by React');
+
+//2.render v DOM to page
+const root =ReactDOM.createRoot(document.getElementById('root'));
+root.render(div);
+</script>
     
 </body>
 </html>
