@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>three APIs</title>
+    <script src="../JS/react.development.js"></script>
+    <script src="../JS/react-dom.development.js"></script>
+</head>
+<body>
+    <!-- create a root div -->
+    <button id="btn">I'm a button </main></button>
+    <div id = "root"></div>
+    <script>
+        // create a react element
+        const button = React.createElement('button',{
+            //id:'btn',
+            type:'button',
+            className:'hello',
+            onClick:()=>{alert('why do you click on me?')}
+        },'click on me');
+        // create first div
+        const div = React.createElement('div',{},'this is a div ', button);
+        // get the root element
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        // render the element in the root
+        //root.render(button);
+        root.render(div);
+          // get button element
+           const btn = document.getElementById('btn');
+           btn.addEventListener('click',()=>{
+            const button = React.createElement('button',{
+            //id:'btn',
+            type:'button',
+            className:'hello',
+            onClick:()=>{alert('why do you click on me?')}
+        },'do not click on me');
+        root.render(button);
+           });
+
+     
+    </script>
+    
+</body>
+</html>
