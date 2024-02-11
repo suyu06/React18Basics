@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>virtualDOM      
+    </title>
+    <script src ="../JS/react.development.js"></script>
+    <script src="../JS/react-dom.development.js"></script>
+    <script src="../JS/babel.min.js"></script>
+</head>
+<body>
+    <button id ="btn">click on me</button>
+    <hr>
+    <div id = "root"></div>
+    <script type="text/babel">
+        // create a data
+        const data = ["suzy","smith","kevin"];
+        // crate a list
+        const list = <ul>{data.map(item=>(<li>{item}</li>))}</ul>;
+        // render
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(list);
+    </script>
+    
+</body>
+</html>

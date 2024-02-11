@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listRender</title>
+    <script src="../JS/react.development.js"></script>
+    <script src="../JS/react-dom.development.js"></script>
+    <!-- inject babel  -->
+    <script src ="../JS/babel.min.js"></script>
+</head>
+<body>
+    <div id ="root"></div>
+    <script type="text/babel" >
+        // obj:render the arr into a list , ul>li
+        const arr = ['suzy','smith','kevin'];
+        //use map() to create a new array which each element includes a li label
+        const newArr= arr.map(item=>(<li>{item}</li>));
+        // put newArr into the list
+        const list = <ul>{newArr}</ul>
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(list); 
+    </script>
+</body>
+</html>
