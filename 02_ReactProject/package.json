@@ -2,10 +2,7 @@
   "name": "02_reactproject",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "index.js",  
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -13,6 +10,11 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-script": "^2.0.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",    
+    "start":"react-scripts start",
+    "build": "react-scripts build"
   },
   "browserslist": {
     "production": [
