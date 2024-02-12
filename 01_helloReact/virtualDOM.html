@@ -21,7 +21,15 @@
         // render
         const root = ReactDOM.createRoot(document.getElementById('root'));
         root.render(list);
-    </script>
+        document.getElementById('btn').addEventListener('click',()=>{
+           // console.log(123);
+           // create a data
+        const data = ["smith","kevin"];
+        // crate a list
+        const list = <ul>{data.map(item=>(<li>{item}</li>))}</ul>;
+        root.render(list);
+        })   
+         </script>
     
 </body>
 </html>
