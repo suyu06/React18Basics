@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom/client';
+import './index.css'
 const App = <div className='logs'>
     {/* each study log item */}
     <div className='item'>
