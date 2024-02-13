@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #DFDFDF;}
+
+    /* log container's style */
+.logs{
+    width: 800px;
+    margin:50px auto;
+    background-color: #bfa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    padding:20px;
+}    
+/* item style */
+.item{
+    /* enable flexible box */
+     display: flex;
+     margin: 16px 0;
+     padding: 6px;
+     background-color:#FCBF49 ;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+/* set the style for the date */
+.date{
+    width: 90px;
+    background-color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+
+}
+/* set the style for the month */
+.month{
+    height: 30px;
+    background-color: #D62828;
+    line-height: 30px;
+    color:#fff;
+}
+/* set the style for the day */
+.day{
+    height:60px;
+    line-height: 60px;
+    font-size: 50px;
+}
+/* set the style for the content */
+.content{
+    flex:auto;
+    text-align: center;
+}
+/* set the style for the description */
+.description{
+    font-size: 16px;
+    color: #194B49;  
+}
+/* set the style for the time */
+.time{
+ color:#D62828;
+}
